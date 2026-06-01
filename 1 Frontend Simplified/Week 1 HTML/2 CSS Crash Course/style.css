@@ -16,4 +16,24 @@ div {
   /* better practice is instead of hardcoding a height value is instead of using a px value is to use vh. vh is short for viewport height, where 1vh equals 1% of the visible browser window's height. using 100vh forces an element (like a header or background) to take up exactly 100% of the screen height, regardless of the device */
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  /* Short Form Coding a Border 
+    border: 1px solid black;
+  */
+  /* sets a visible 1px border around the element */
+  /* Long Form Coding a Border:
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+  */
+  font-size: 14px;
+  font-weight: 600;
+  /* sets the text to be bold instead of using <strong> */
+  font-family: roboto;
+  /* fallback font:
+    font-family: roboto, sans-serif;
+
+    sans-serif is a fallback font for browsers or devices that don't inately have roboto as an option
+  */
+
 }
