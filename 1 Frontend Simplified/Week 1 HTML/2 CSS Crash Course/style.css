@@ -1,3 +1,19 @@
-h1 {
-  color: rgba(0, 0, 0, .5);
+/* Hardcoded Values
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+
+} */
+
+div {
+  width: 100%;
+  max-width: 200px;
+  /* height: 200px; */
+  /* you want to avoid hardcoding a height value because it will affect web page responsiveness */
+  /* in the example, when hardcoding a height value. when displaying on a smaller window or device, the text extends past the background color of the div */
+  /* better practice is instead of hardcoding a height value is instead of using a px value is to use vh. vh is short for viewport height, where 1vh equals 1% of the visible browser window's height. using 100vh forces an element (like a header or background) to take up exactly 100% of the screen height, regardless of the device */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
 }
