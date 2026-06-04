@@ -1,0 +1,26 @@
+div {
+  background-color: red;
+  color: white;
+  font-size: 24px;
+}
+
+/* Desktops */
+@media (max-width: 992px) {
+  div {
+    font-size: 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  div {
+    font-size: 18px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+  div {
+    font-size: 16px;
+  }
+}
