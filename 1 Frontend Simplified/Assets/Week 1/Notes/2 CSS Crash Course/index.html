@@ -146,7 +146,7 @@
         a threshold
       </li>
     </ul>
-    <h4>Media Queries</h4>
+    <h3>Media Queries</h3>
     <p>
       <strong>What are they used for?</strong> used to make a page more
       <em>responsive</em>
@@ -161,7 +161,7 @@
     <p><strong>Example</strong>: (style.css)</p>
     <p>@media (max-width: 992px){ div{ font-size: 20px; } }</p>
     <p></p>
-    <h4>Pseudo Selectors</h4>
+    <h3>Pseudo Selectors</h3>
     <p>
       <strong>::before</strong>: insert something before the content of the
       element
@@ -169,6 +169,61 @@
     <p>
       <strong>::after</strong>: insert something after the content of the
       element
+    </p>
+    <h3>CSS Transitions and Transforms</h3>
+    <p>
+      When used together, they allow us to create simple animations and add
+      valuable interaction and visual feedback for the user.
+      <strong>Transforms</strong> move or change the appearance of an element
+      while <strong>transitions</strong> make the element smoothly and gradually
+      change from one state to another.
+    </p>
+    <h4>
+      There are two properties required in order for the
+      <strong>transition</strong> to take place
+    </h4>
+    <ol>
+      <li>transition-property</li>
+      <li>transition-duration</li>
+    </ol>
+    <h4>Transition Shorthand (the first two properties are required)</h4>
+    <p>
+      div { transition: <strong>property</strong> <strong>duration</strong>
+      <strong>timing-function</strong> <strong>delay</strong>; }
+    </p>
+
+    <ul>
+      <li>
+        <strong>Property</strong>: Specifies the CSS property where the
+        transition will be applied. You can a=pply a transition to an individual
+        property <strong>(ie background-color or transform)</strong> or to all
+        properties in the ruleset <strong>(all)</strong>.
+      </li>
+      <li>
+        <strong>Duration</strong>: Timespan of the transition
+        <strong>You can specify in seconds or milliseconds</strong>
+      </li>
+      <li>
+        <strong>Timing-Function</strong>: defines the speed of the transition
+        over the duration. The default is <strong>ease</strong> which starts
+        slow, quickly speeds up, and slows at the end. Other timing options
+        include: <strong>linear, ease-in, ease-out, ease-in-out</strong>.
+      </li>
+    </ul>
+
+    <h4>
+      <strong>@keyframes</strong>: defines the element states at a specific
+      timeframe
+    </h4>
+    <p>
+      @keyframes popup{ 0% { transform: scale(1); } 50% { transform: scale(1.1);
+      } 100% { transform: scale(1) } }
+    </p>
+    <p>
+      <strong
+        >will animate to: pop upwards larger, to the user and back down to
+        original size</strong
+      >
     </p>
   </body>
 </html>
