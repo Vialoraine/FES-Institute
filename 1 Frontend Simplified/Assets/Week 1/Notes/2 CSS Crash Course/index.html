@@ -78,7 +78,7 @@
       <li>class: multiple elements</li>
       <li>id: single element or sections</li>
     </ul>
-    <h4>CSS Hierarchy </h4>
+    <h4>CSS Hierarchy</h4>
     <ol>
       <li>id</li>
       <li>class</li>
@@ -110,9 +110,14 @@
     <h4>Display</h4>
     <p>Two CSS display values</p>
     <ul>
-      <li><strong>Block</strong>: takes 100% of the width, startss on a new line</li>
+      <li>
+        <strong>Block</strong>: takes 100% of the width, startss on a new line
+      </li>
       <li>examples: p and div</li>
-      <li><strong>Inline</strong>: doesn't allow you to set width and height, starts on the same line.</li>
+      <li>
+        <strong>Inline</strong>: doesn't allow you to set width and height,
+        starts on the same line.
+      </li>
       <li>examples: span and img</li>
     </ul>
     <h4>Postition</h4>
@@ -120,14 +125,42 @@
     <h4>Common</h4>
     <ul>
       <li><strong>Static</strong>: follows normal flow of page</li>
-      <li><strong>Relative</strong>: follows normal flow of page, lets you position: top, right, bottom, left</li>
-      <li><strong>Absolute</strong>: doesn't follow normal flow of page, lets you position: top, right, bottom, left. position based off closest 'position: relative' parent.</li>
+      <li>
+        <strong>Relative</strong>: follows normal flow of page, lets you
+        position: top, right, bottom, left
+      </li>
+      <li>
+        <strong>Absolute</strong>: doesn't follow normal flow of page, lets you
+        position: top, right, bottom, left. position based off closest
+        'position: relative' parent.
+      </li>
     </ul>
     <h4>Uncommon</h4>
     <ul>
-      <li><strong>Fixed</strong>: sticks element permanently, allows top, right, bottom, left positioning</li>
-      <li><strong>Sticky</strong>: sticks element permanently on page once it hits a threshold</li>
+      <li>
+        <strong>Fixed</strong>: sticks element permanently, allows top, right,
+        bottom, left positioning
+      </li>
+      <li>
+        <strong>Sticky</strong>: sticks element permanently on page once it hits
+        a threshold
+      </li>
     </ul>
-
+    <h4>Media Queries</h4>
+    <p>
+      <strong>What are they used for?</strong> used to make a page more
+      <em>responsive</em>
+    </p>
+    <h4>Common Breakpoints (max-width)</h4>
+    <ul>
+      <li><strong>576px</strong>: mobile phones</li>
+      <li><strong>768px</strong>: tablets</li>
+      <li><strong>992px</strong>: desktops</li>
+      <li><strong>1200px</strong>: large desktops</li>
+    </ul>
+    <p><strong>Example</strong>: (style.css)</p>
+    <p>@media (max-width: 992px){ div{ font-size: 20px; } }</p>
+    <p></p>
+    
   </body>
 </html>
