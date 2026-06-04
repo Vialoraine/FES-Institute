@@ -1,0 +1,34 @@
+div {
+  transition: background-color 300ms;
+}
+
+/* Static */
+div:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+/* Floating Button Animation */
+button {
+  animation: float 2000ms 3 alternate-reverse;
+  /* Adding alternative-reverse makes a smoother transition and stops the effect from jumping */
+  transition: all 300ms;
+}
+
+/* On Hover */
+button:hover {
+  background-color: black;
+  color: white
+}
+
+/* Floating Button Effect Animation */
+@keyframes float {
+  0% { 
+    /* To */
+    transform: translateY(0);
+  }
+
+  100% {
+    /* From */
+    transform: translateY(10px);
+  }
+}
