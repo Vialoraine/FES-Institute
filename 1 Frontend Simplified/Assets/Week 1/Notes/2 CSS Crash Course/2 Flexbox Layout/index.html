@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Flexbox Layout</h1>
+
+    <h2>1) justify-content</h2>
+    <p>display: flex;</p>
+    <p>justify-content: _____</p>
+    <ul>
+      <li>
+        <strong>flex-start (default)</strong>: items align to the left side of
+        the container
+      </li>
+      <li>
+        <strong>flex-end</strong>: items align to right side of the container
+      </li>
+      <li>
+        <strong>center</strong>: items align to the center of the container
+      </li>
+      <li>
+        <strong>space-bottom</strong>: items display with equal spacing between
+        them
+      </li>
+      <li>
+        <strong>space-around</strong>: items display with equal spacing around
+        them
+      </li>
+    </ul>
+
+    <h2>2) align-items</h2>
+    <!-- aligns item vertcally -->
+    <p>display: flex;</p>
+    <p>align-items: _____</p>
+    <ul>
+      <li><strong>flex-start</strong>: items align to the top of the container</li>
+      <li><strong>flex-end</strong>: items align to the bottom of the container</li>
+      <li><strong>center</strong>: items align at the vertical center of the container</li>
+      <li><strong>baseline</strong>: items display at the baseline of the container</li>
+      <li><strong>stretch</strong>: items are stretched to fit the container</li>
+    </ul>
+    <p>Another property you can apply is <strong>align-self</strong>. It accepts the same values of <strong>align-items</strong>.</p>
+
+    <h2>3) flex-direction</h2>
+    <!-- defines the direction items are placed in the container -->
+    <p>display: flex;</p>
+    <p>flex-direction: _____</p>
+    <ul>
+      <li><strong>row</strong>: items are placed the same as the text direction</li>
+      <li><strong>row-reverse</strong>: items are placed opposite to the text direction</li>
+      <li><strong>column</strong>: items are placed top to bottom</li>
+      <li><strong>column-reverse</strong>: items are placed bottom to top</li>
+    </ul>
+
+    <h3>Sometimes reversing the row or colomn order of a container isn't enough.</h3> 
+    <p>In these cases, we can apply the <strong>order property</strong> to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).</p>
+    <p>._____ { order: _____; }</p>
+
+    <h2>4) flex-wrap</h2>
+    <!-- spreads elements out -->
+    <p>display: flex;</p>
+    <p>flex-wrap: _____</p>
+    <ul>
+      <li><strong>nowrap</strong>: every item is fit to a single line</li>
+      <li><strong>wrap</strong>: items wrap around to additional lines</li>
+      <li><strong>wrap-reverse</strong>: items wrap around to additional lines in reverse</li>
+    </ul>
+
+    <h2>5) flex-flow</h2>
+    <!-- combines both properties of flex-wrap and flex-direction -->
+    <p>display: flex;</p>
+    <p>flex-flow: _____</p>
+    <ul>
+      <li><strong>row wrap</strong>: items are placed in a row to additional lines</li>
+      <li><strong>column wrap-reverse</strong>: items are in a column and opposite order</li>
+    </ul>
+
+    <h2>6) align-content</h2>
+    <!-- sets how multiple lines are spread apart from eachother -->
+    <p>display: flex;</p>
+    <p>align-content: _____</p>
+    <ul>
+      <li><strong>flex-start</strong>: lines are packed at the top of the container</li>
+      <li><strong>flex-end</strong>: lines are packed at the bottom of the container</li>
+      <li><strong>center</strong>: lines are packed at the vertical center of the container</li>
+      <li><strong>space-between</strong>: lines display with equal spacing between them</li>
+      <li><strong>space-around</strong>: lines display with equal spacing around them</li>
+      <li><strong>stretch</strong>: lines are stretched to fit the container</li>
+    </ul>
+
+    <p><strong>align-content</strong>: determines the spacing between the lines</p>
+    <p><strong>align-items</strong>: determines how the items. as a whole, are aligned in the container</p>
+    <p>*when there is only one line, <strong>align-content</strong> has no effect</p>
+
+  </body>
+</html>
